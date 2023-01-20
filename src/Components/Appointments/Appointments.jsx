@@ -4,6 +4,8 @@ import "./Appointments.css";
 import { useNavigate } from "react-router-dom";
 import video from "../../assets/video.png";
 import dot from "../../assets/dot.png";
+import anytime from "../../assets/anytime.png";
+import person from "../../assets/person.png";
 import { SearchIcon, Icon, ChevronDownIcon } from "@chakra-ui/icons";
 import {
   Table,
@@ -280,13 +282,13 @@ const Appointments = () => {
                       {" "}
                       <div style={{ display: "flex" }}>
                         <div>
-                          <img className="video-icon" src={video} alt="Image" />
+                          <img className="video-icon" src={anytime} alt="Image" />
                         </div>
                         <Text style={{ marginLeft: "10px", marginTop: "-7px" }}>
-                          Video
+                        Anytime Consult
                         </Text>
                       </div>
-                      <Text style={{ color: "grey" }}>First Consultation</Text>
+                      <Text style={{ color: "grey" }}></Text>
                     </Td>
                     <Td></Td>
                     <Td>Pankaj Dhir</Td>
@@ -394,13 +396,13 @@ const Appointments = () => {
                       {" "}
                       <div style={{ display: "flex" }}>
                         <div>
-                          <img className="video-icon" src={video} alt="Image" />
+                          <img className="video-icon" src={person} alt="Image" />
                         </div>
                         <Text style={{ marginLeft: "10px", marginTop: "-7px" }}>
-                          Video
+                        In-person
                         </Text>
                       </div>
-                      <Text style={{ color: "grey" }}>First Consultation</Text>
+                      <Text style={{ color: "grey" }}>Second Opinion</Text>
                     </Td>
                     <Td></Td>
                     <Td>Ram Dayanand</Td>
