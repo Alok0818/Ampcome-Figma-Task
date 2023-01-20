@@ -1,4 +1,4 @@
-body{
+body {
   background: #000;
 }
 
@@ -85,33 +85,11 @@ body{
   border: 2px solid red;
 }
 
-.list-box > div {
-  border: 2px solid orange;
-  display: flex;
-  background: #f0f4fd;
-  justify-content: space-evenly;
-  height: 46px;
-  margin: auto;
-  padding-top: 16px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-
-  text-transform: uppercase;
-
-  color: rgba(41, 55, 95, 0.6);
+#tdColor {
+  color: rgb(83, 192, 235);
 }
 
-/* .list-box>div>div{
-  border: 2px solid orange;
-} */
-
-
-.list-box-details>div{
-  height: 529px;
-  border: 1px solid green;
+#divColor {
+  padding: "10px";
+  color: gray;
 }

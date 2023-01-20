@@ -81,7 +81,7 @@
 
 .main {
   padding-top: 29px;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   display: flex;
 }
 .paper {
