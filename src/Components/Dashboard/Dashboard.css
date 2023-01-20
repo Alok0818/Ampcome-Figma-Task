@@ -1,4 +1,4 @@
-#body{
+#body {
   background: #000;
 }
 .dashboard-page-container {
@@ -79,12 +79,47 @@
   border-radius: 6px;
 }
 
+.main {
+  padding-top: 29px;
+  border: 1px solid teal;
+  display: flex;
+}
 .paper {
-  width: 24px;
-  height: 24px;
-  margin-left: 16px;
-  padding-top: 24;
-  border: 1px solid green;
+  height: 21px;
+  width: 17.849998474121094px;
+  margin-left: 19px;
+}
+
+.paper-right-box {
+  margin-left: 19px;
+}
+
+.paper-right-box1 {
+  width: 95px;
+  height: 19px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135.19%;
+  /* identical to box height, or 19px */
+
+  color: #29375f;
+}
+
+.paper-right-box2 {
+  width: 76px;
+  height: 47px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 197.7%;
+  /* or 47px */
+
+  color: #29375f;
 }
 
 .earning-bottom-box {
