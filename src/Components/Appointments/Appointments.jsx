@@ -23,9 +23,11 @@ import { Select, Text, Code } from "@chakra-ui/react";
 const Appointments = () => {
   const navigate = useNavigate();
   return (
-    <div id="appointment-body">
+    <div id="body">
       <div className="Appointments-page-container">
-        <Sidebar />
+        <div className="appointment-sidebar">
+          <Sidebar />
+        </div>
         <div className="appointment-container">
           <div className="appointments-title">Appointments</div>
           <div className="appointment-subtitle">
@@ -143,8 +145,8 @@ const Appointments = () => {
           <div className="list-box">
             <TableContainer>
               <Table variant="simple">
-                <Thead>
-                  <Tr>
+                <Thead className="table-head">
+                  <Tr className="table-head-row">
                     <Th>ORDER ID</Th>
                     <Th>PATIENT</Th>
                     <Th>CONSULTATION</Th>
@@ -157,11 +159,11 @@ const Appointments = () => {
                   </Tr>
                 </Thead>
                 <Tbody>
-                  <Tr>
+                  <Tr style={{height:"88.1px"}}>
                     <Td>2422562</Td>
                     <Td id="tdColor">
                       Risha Mahin
-                      <div id="divColor">26,7</div>
+                      <div id="divColor">26, F</div>
                     </Td>
                     <Td>
                       <div style={{ display: "flex" }}>
@@ -211,11 +213,11 @@ const Appointments = () => {
                       </Text>
                     </Td>
                   </Tr>
-                  <Tr>
-                    <Td>2422562</Td>
+                  <Tr style={{height:"88.1px"}}>
+                    <Td>2429657</Td>
                     <Td id="tdColor">
-                      Risha Mahin
-                      <div id="divColor">26,7</div>
+                    Riju K
+                      <div id="divColor">32, M</div>
                     </Td>
                     <Td>
                       {" "}
@@ -230,7 +232,7 @@ const Appointments = () => {
                       <Text style={{ color: "grey" }}>First Consultation</Text>
                     </Td>
                     <Td>Medical Camp</Td>
-                    <Td>Anil Kumar</Td>
+                    <Td>Greg Ferguson</Td>
                     <Td>
                       <div>Jul 3, 2021</div>
                       <div>8:53 AM</div>
@@ -244,7 +246,7 @@ const Appointments = () => {
                           textAlign: "center",
                         }}
                       >
-                        Cancelled
+                        No Show
                       </Code>
                     </Td>
                     <Td>
@@ -268,11 +270,11 @@ const Appointments = () => {
                       </Text>
                     </Td>
                   </Tr>
-                  <Tr>
-                    <Td>2422562</Td>
+                  <Tr style={{height:"88.1px"}}>
+                    <Td>2422455</Td>
                     <Td id="tdColor">
-                      Risha Mahin
-                      <div id="divColor">26,7</div>
+                    Prajeesh
+                      <div id="divColor">47, M</div>
                     </Td>
                     <Td>
                       {" "}
@@ -287,7 +289,7 @@ const Appointments = () => {
                       <Text style={{ color: "grey" }}>First Consultation</Text>
                     </Td>
                     <Td></Td>
-                    <Td>Anil Kumar</Td>
+                    <Td>Pankaj Dhir</Td>
                     <Td>
                       <div>Jul 3, 2021</div>
                       <div>8:53 AM</div>
@@ -301,7 +303,7 @@ const Appointments = () => {
                           textAlign: "center",
                         }}
                       >
-                        Cancelled
+                        Completed
                       </Code>
                     </Td>
                     <Td>
@@ -325,11 +327,11 @@ const Appointments = () => {
                       </Text>
                     </Td>
                   </Tr>
-                  <Tr>
-                    <Td>2422562</Td>
+                  <Tr style={{height:"88.1px"}}>
+                    <Td>2421751</Td>
                     <Td id="tdColor">
-                      Risha Mahin
-                      <div id="divColor">26,7</div>
+                    Nikita Gandhi
+                      <div id="divColor">29, F</div>
                     </Td>
                     <Td>
                       {" "}
@@ -344,7 +346,7 @@ const Appointments = () => {
                       <Text style={{ color: "grey" }}>First Consultation</Text>
                     </Td>
                     <Td>Medical Camp</Td>
-                    <Td>Anil Kumar</Td>
+                    <Td>Sujata Mohan</Td>
                     <Td>
                       <div>Jul 3, 2021</div>
                       <div>8:53 AM</div>
@@ -358,7 +360,7 @@ const Appointments = () => {
                           textAlign: "center",
                         }}
                       >
-                        Cancelled
+                        Booked
                       </Code>
                     </Td>
                     <Td>
@@ -382,11 +384,11 @@ const Appointments = () => {
                       </Text>
                     </Td>
                   </Tr>
-                  <Tr>
-                    <Td>2422562</Td>
+                  <Tr style={{height:"88.1px"}}>
+                    <Td>2422455</Td>
                     <Td id="tdColor">
-                      Risha Mahin
-                      <div id="divColor">26,7</div>
+                    Darshan Singh
+                      <div id="divColor">36, M</div>
                     </Td>
                     <Td>
                       {" "}
@@ -401,7 +403,7 @@ const Appointments = () => {
                       <Text style={{ color: "grey" }}>First Consultation</Text>
                     </Td>
                     <Td></Td>
-                    <Td>Anil Kumar</Td>
+                    <Td>Ram Dayanand</Td>
                     <Td>
                       <div>Jul 3, 2021</div>
                       <div>8:53 AM</div>
@@ -415,7 +417,7 @@ const Appointments = () => {
                           textAlign: "center",
                         }}
                       >
-                        Cancelled
+                        Completed
                       </Code>
                     </Td>
                     <Td>
@@ -439,11 +441,11 @@ const Appointments = () => {
                       </Text>
                     </Td>
                   </Tr>
-                  <Tr>
-                    <Td>2422562</Td>
+                  <Tr style={{height:"88.1px"}}>
+                    <Td>2421751</Td>
                     <Td id="tdColor">
-                      Risha Mahin
-                      <div id="divColor">26,7</div>
+                    Risha Mahin
+                      <div id="divColor">19, F</div>
                     </Td>
                     <Td>
                       {" "}
@@ -458,7 +460,7 @@ const Appointments = () => {
                       <Text style={{ color: "grey" }}>First Consultation</Text>
                     </Td>
                     <Td></Td>
-                    <Td>Anil Kumar</Td>
+                    <Td>Prakash Jhanti</Td>
                     <Td>
                       <div>Jul 3, 2021</div>
                       <div>8:53 AM</div>
@@ -472,7 +474,7 @@ const Appointments = () => {
                           textAlign: "center",
                         }}
                       >
-                        Cancelled
+                        Completed
                       </Code>
                     </Td>
                     <Td>

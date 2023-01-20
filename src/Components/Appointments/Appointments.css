@@ -1,4 +1,4 @@
-body {
+#body {
   background: #000;
 }
 
@@ -11,6 +11,11 @@ body {
   /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 77px 1369px;
+}
+
+.appointment-sidebar {
+  /* border: 5px solid red; */
+  background: #203765;
 }
 
 .appointment-container {
@@ -82,14 +87,67 @@ body {
   height: 575px;
   width: 1261px;
   margin-left: 40px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  background: #ffffff;
+  box-shadow: 0px 4px 10px #e5e6ef;
+  border-radius: 6px;
+}
+
+.table-head {
+  height: 46px;
+  background: #f0f4fd;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: rgba(41, 55, 95, 0.6);
+}
+
+.table-head-row > th {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: rgba(41, 55, 95, 0.6);
 }
 
 #tdColor {
-  color: rgb(83, 192, 235);
+  width: 80px;
+  height: 17px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #279af1;
 }
 
 #divColor {
-  padding: "10px";
-  color: gray;
+  width: 33px;
+  height: 15px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: rgba(41, 55, 95, 0.5);
 }
